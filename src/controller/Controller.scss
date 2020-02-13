@@ -1,0 +1,24 @@
+.controller {
+    width: 100%;
+    min-height: 100px;
+    padding: 20px;
+
+    display: flex;
+    align-items: center;
+
+    &__play-stop {
+        height: 60px;
+        width: 60px;
+
+        display: flex;
+        align-items: center;
+        justify-content: center;
+
+        background-color: lightblue;
+
+        border: 5px solid darkgray;
+        border-radius: 50%;
+
+        cursor: pointer;
+    }
+}

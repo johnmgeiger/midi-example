@@ -1,0 +1,46 @@
+
+.midi {
+    width: 100%;
+    flex: 1;
+
+    background-color: #ccc;
+
+    display: flex;
+    flex-direction: column;
+
+    &__cell {
+        flex:1;
+
+        display: flex;
+        align-items: center;
+        justify-content: center;
+
+        border: 1px solid black;
+
+        cursor: pointer;
+
+        &.active {
+            background-color: lightyellow;
+        }
+
+        &.name {
+            cursor: default;
+        }
+
+        &:first-of-type {
+            max-width: 100px;
+        }
+
+        &:nth-of-type(4n + 1) {
+            border-right: 5px solid #444;
+        }
+    }
+
+    &__row {
+        flex:1;
+
+        display: flex;
+
+        border-bottom: 2px solid black;
+    }
+}
